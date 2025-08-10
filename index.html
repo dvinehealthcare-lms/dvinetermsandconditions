@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions</title>
+    <style>
+        body {
+            font-family: 'Lora', Georgia, serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #1a202c;
+            line-height: 1.9;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+        .header h1 {
+            text-align: center;
+            color: #1a202c;
+            font-size: 2.8em;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -0.02em;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+        }
+        .section {
+            margin-bottom: 35px;
+            padding: 25px;
+            border-left: 4px solid #d4af37;
+            background-color: #fafafa;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+        }
+        .section:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #1a202c;
+            font-size: 1.7em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section h2::before {
+            content: counter(section-counter);
+            counter-increment: section-counter;
+            width: 30px;
+            height: 30px;
+            background-color: #d4af37;
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+        .section p {
+            font-size: 1.15em;
+            color: #2d3748;
+            margin: 0;
+        }
+        .highlight {
+            font-weight: 700;
+            color: #9b2c2c;
+            background-color: #fff1f1;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.95em;
+            color: #718096;
+        }
+        @media print {
+            body {
+                background-color: #ffffff;
+            }
+            .header {
+                position: static;
+                box-shadow: none;
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+                margin: 20px;
+                padding: 20px;
+            }
+            .section {
+                border-left: 2px solid #000000;
+                background-color: transparent;
+            }
+            .section h2::before {
+                background-color: #000000;
+            }
+            .highlight {
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            .footer {
+                border-top: none;
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 25px;
+            }
+            .header h1 {
+                font-size: 2.3em;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
+            .section p {
+                font-size: 1.05em;
+            }
+        }
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .section h2 {
+                font-size: 1.3em;
+            }
+            .section p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Terms & Conditions</h1>
+    </div>
+    <div class="container">
+        <style>
+            body {
+                counter-reset: section-counter;
+            }
+        </style>
+        
+        <div class="section">
+            <h2>Booking Amount</h2>
+            <p>A non-refundable slot booking amount of <span class="highlight">₹500</span> is required to confirm your registration. If you are unable to join the current batch, this amount can be adjusted against the next available batch.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Fee Policy</h2>
+            <p>The fee amount discussed and agreed upon during registration is final and will not be changed at any stage of the training.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Attendance & Participation</h2>
+            <p>A minimum of <span class="highlight">90% attendance</span> in classes is mandatory. All tests assigned by the trainer or faculty must be completed within the given deadlines. Candidates are expected to show full dedication towards learning all subjects.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Interview Readiness</h2>
+            <p>Candidates must successfully complete <span class="highlight">two levels of mock interviews</span> before being scheduled for an HR interview.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Code of Conduct</h2>
+            <p>Any fraudulent activity or unprofessional behavior will lead to <span class="highlight">immediate removal</span> from the training program without refund.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Training Modifications</h2>
+            <p>The company reserves the right to modify the training module, schedule, or duration based on operational requirements or unforeseen circumstances.</p>
+        </div>
+        
+        <div class="footer">
+            © 2025 Your Organization. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
